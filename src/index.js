@@ -4,7 +4,7 @@ import { render } from 'react-dom';
 import WebFontLoader from 'webfontloader';
 
 import './scss/index.scss';
-import { Card, CardTitle, CardText, CardActions } from 'react-md/lib/Cards';
+import { Card, CardTitle, CardText, CardActions, Drawer } from 'react-md/lib/Cards';
 import Button from 'react-md/lib/Buttons';
 
 WebFontLoader.load({
