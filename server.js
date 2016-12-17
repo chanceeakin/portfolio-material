@@ -1,18 +1,17 @@
+/*eslint no-console:0 */
 'use strict';
+require('core-js/fn/object/assign');
+const webpack = require('webpack');
+const WebpackDevServer = require('webpack-dev-server');
+const config = require('./webpack.config');
+const open = require('open');
 
-var bodyParser = require('body-parser');
-var express = require('express');
-var app = express();
-var PORT = process.env.PORT || 3001; // Sets an initial port. We'll use this later in our listener
-
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: true }));
-app.use(bodyParser.text());
-app.use(bodyParser.json({ type: 'application/vnd.api+json' }));
-
-app.use(express.static(process.cwd() + '/public'));
-app.use('/bower_components', express.static(__dirname + '/bower_components'));
-
-app.listen(PORT, function () {
-	console.log('App listening on PORT: ' + PORT);
+new WebpackDevServer(webpack(config), config.devServer)
+.listen(config.port, 'localhost', (err) => {
+  if (err) {
+    console.log(err);
+  }
+  console.log('Listening at localhost:' + config.port);
+  console.log('Opening your system browser...');
+  open('http://localhost:' + config.port + '/webpack-dev-server/');
 });
