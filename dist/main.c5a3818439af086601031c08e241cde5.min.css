@@ -1,0 +1,52 @@
+.md-btn--color-secondary-active {
+  background: rgba(255, 64, 129, 0.12);
+}
+
+.md-card-title--title-contextual {
+  color: #ff4081;
+}
+
+.md-circular-progress-path {
+  stroke: #ff4081;
+}
+
+.md-progress--linear-active {
+  background: #ff4081;
+}
+
+.md-progress--linear {
+  background: #ff80ab;
+}
+
+.md-switch-track--on {
+  background: rgba(233, 30, 99, 0.5);
+}
+
+.md-switch-thumb--on {
+  background: #e91e63;
+}
+
+.md-tab-indicator {
+  background: #ff4081;
+}
+
+.md-text--theme-secondary {
+  color: #ff4081;
+}
+
+.md-ink--secondary .md-ink {
+  background: rgba(255, 64, 129, 0.26);
+}
+
+.md-background--secondary {
+  background: #ff4081;
+}
+
+@media screen and (min-width: 1025px) {
+  .md-background--primary-hover:hover {
+    background: rgba(0, 150, 136, 0.9);
+  }
+  .md-background--secondary-hover:hover {
+    background: rgba(255, 64, 129, 0.9);
+  }
+}

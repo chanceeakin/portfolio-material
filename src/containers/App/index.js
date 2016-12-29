@@ -2,6 +2,7 @@ import React, { PureComponent, PropTypes, cloneElement } from 'react';
 import Helmet from 'react-helmet';
 import { connect } from 'react-redux';
 import NavigationDrawer from 'react-md/lib/NavigationDrawers';
+import NewComp from '../../components/NewComp';
 
 import { app } from '../../config';
 import './styles.scss';
@@ -36,10 +37,11 @@ export default class App extends PureComponent {
     return (
       <NavigationDrawer
         defaultMedia={defaultMedia}
-        drawerTitle="Test"
+        drawerTitle="test 2"
         toolbarTitle="Hello, World!"
         contentClassName="md-grid"
       >
+        <NewComp />
         <Helmet {...app} />
         {children}
       </NavigationDrawer>

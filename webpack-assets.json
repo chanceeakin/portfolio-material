@@ -1,0 +1,25 @@
+{
+  "javascript": {
+    "main": "/main.js"
+  },
+  "styles": {},
+  "assets": {
+    "./src/containers/App/styles.scss": {
+      "md-btn--color-secondary-active": "styles__md-btn--color-secondary-active-3TGkl",
+      "md-card-title--title-contextual": "styles__md-card-title--title-contextual-Vyai7",
+      "md-circular-progress-path": "styles__md-circular-progress-path-23-61",
+      "md-progress--linear-active": "styles__md-progress--linear-active-3DJSr",
+      "md-progress--linear": "styles__md-progress--linear-1Rtt_",
+      "md-switch-track--on": "styles__md-switch-track--on-23FMZ",
+      "md-switch-thumb--on": "styles__md-switch-thumb--on-2tMvw",
+      "md-tab-indicator": "styles__md-tab-indicator-W9MfJ",
+      "md-text--theme-secondary": "styles__md-text--theme-secondary-3g1QD",
+      "md-ink--secondary": "styles__md-ink--secondary-1wHtN",
+      "md-ink": "styles__md-ink-1CYKI",
+      "md-background--secondary": "styles__md-background--secondary-1Cqcv",
+      "md-background--primary-hover": "styles__md-background--primary-hover-15Jmb",
+      "md-background--secondary-hover": "styles__md-background--secondary-hover-rXTXn",
+      "_style": ".styles__md-btn--color-secondary-active-3TGkl {\n  background: rgba(255, 64, 129, 0.12);\n}\n\n.styles__md-card-title--title-contextual-Vyai7 {\n  color: #ff4081;\n}\n\n.styles__md-circular-progress-path-23-61 {\n  stroke: #ff4081;\n}\n\n.styles__md-progress--linear-active-3DJSr {\n  background: #ff4081;\n}\n\n.styles__md-progress--linear-1Rtt_ {\n  background: #ff80ab;\n}\n\n.styles__md-switch-track--on-23FMZ {\n  background: rgba(233, 30, 99, 0.5);\n}\n\n.styles__md-switch-thumb--on-2tMvw {\n  background: #e91e63;\n}\n\n.styles__md-tab-indicator-W9MfJ {\n  background: #ff4081;\n}\n\n.styles__md-text--theme-secondary-3g1QD {\n  color: #ff4081;\n}\n\n.styles__md-ink--secondary-1wHtN .styles__md-ink-1CYKI {\n  background: rgba(255, 64, 129, 0.26);\n}\n\n.styles__md-background--secondary-1Cqcv {\n  background: #ff4081;\n}\n\n@media screen and (min-width: 1025px) {\n  .styles__md-background--primary-hover-15Jmb:hover {\n    background: rgba(0, 150, 136, 0.9);\n  }\n  .styles__md-background--secondary-hover-rXTXn:hover {\n    background: rgba(255, 64, 129, 0.9);\n  }\n}\n"
+    }
+  }
+}
