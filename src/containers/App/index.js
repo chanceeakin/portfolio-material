@@ -43,7 +43,6 @@ export default class App extends PureComponent {
         navItems={navItems}
         toolbarTitle="Chance Eakin, Software Developer"
         contentClassName="md-grid"
-        drawerType={'persistent'}
       >
         <Helmet {...app} />
         {children}

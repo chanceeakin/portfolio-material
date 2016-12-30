@@ -8,7 +8,7 @@ const DEV = NODE_ENV !== 'production';
 
 const CLIENT = path.resolve(process.cwd(), 'src', 'client.js');
 
-const CSSModules = true; // Don't know how to get it working without CDN though
+const CSSModules = false; // Don't know how to get it working without CDN though
 
 const VENDORS = [
   'react', 'react-dom', 'react-addons-css-transition-group', 'react-addons-transition-group',
@@ -34,7 +34,8 @@ const getPlugins = () => {
     }),
     new StyleLintPlugin({
       syntax: 'scss',
-      failOnError: true,
+      failOnError: false,
+      quiet: false,
     }),
     new webpack.DefinePlugin({
       'process.env': { NODE_ENV: JSON.stringify(NODE_ENV) },
@@ -141,7 +142,7 @@ module.exports = {
       loader: 'url-loader?limit=10000',
     }, {
       test: webpackIsomorphicToolsPlugin.regular_expression('images'),
-      loader: 'url-loader?limit=10240!image-webpack?bypassOnDebug',
+      loader: 'url-loader?limit=10240!image-webpack-loader?bypassOnDebug',
     }],
   },
   resolve: {

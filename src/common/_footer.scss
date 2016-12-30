@@ -1,0 +1,29 @@
+@import '~normalize.css';
+@import '~react-md/src/scss/react-md';
+
+.app-footer {
+  align-items: center;
+  background: $md-blue-500;
+  color: $md-white-base;
+  margin-bottom: -8px;
+  width: calc(100% + 16px);
+
+  .md-grid {
+    padding: 0;
+  }
+
+  p,
+  .md-title,
+  .md-body-2 {
+    background: $md-deep-orange-a-700;
+    color: inherit;
+  }
+}
+
+.footer-header.md-cell--12 {
+  width: calc(100% + 16px);
+
+  .md-title {
+    padding: 1.3em;
+  }
+}
