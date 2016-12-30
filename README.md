@@ -33,5 +33,6 @@ section for portfolio projects
 about me
 That fun, springy text thing for technologies I know
 color issues!
-the Footer
-getting sass to actually work
+
+### To Do List
+Cards - figure out what to do there...

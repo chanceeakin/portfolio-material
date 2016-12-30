@@ -21,9 +21,7 @@ export default class Home extends PureComponent {
         <div className="md-cell--12">
           <Jumbotron />
         </div>
-        <div className="md-cell--3-offset">
-          <LeftCard />
-        </div>
+        <LeftCard />
       </div>
     );
   }
