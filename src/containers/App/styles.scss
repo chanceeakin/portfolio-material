@@ -1,6 +1,15 @@
+// index.scss
+@import '~normalize.css';
 @import '~react-md/src/scss/react-md';
 
 $md-primary-color: $md-teal-500;
 $md-secondary-color: $md-pink-a-400;
 
-@include react-md-theme-everything($md-primary-color, $md-pink-a-200);
+@include react-md-everything;
+
+.blue-theme {
+  @include react-md-theme-everything(
+    $md-cyan-500,
+    $md-yellow-a-700
+  );
+}

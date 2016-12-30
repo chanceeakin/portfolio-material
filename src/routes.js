@@ -20,6 +20,22 @@ export default function createRoutes(/* store */) {
         }).catch(errorLoading);
       },
     }, {
+      path: '/about',
+      getComponent(nextState, cb) {
+        const renderRoute = loadModule(cb);
+        System.import('./containers/About').then(Component => {
+          renderRoute(Component);
+        }).catch(errorLoading);
+      },
+    }, {
+      path: '/projects',
+      getComponent(nextState, cb) {
+        const renderRoute = loadModule(cb);
+        System.import('./containers/projects').then(Component => {
+          renderRoute(Component);
+        }).catch(errorLoading);
+      },
+    }, {
       path: '*',
       getComponent(state, cb) {
         System.import('./components/NotFound').then(loadModule(cb)).catch(errorLoading);

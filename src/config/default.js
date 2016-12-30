@@ -3,7 +3,7 @@ module.exports = {
   port: process.env.NODE_PORT || 3000,
   app: {
     htmlAttributes: { lang: 'en' },
-    title: 'React-MD Starter',
+    title: 'Chance Eakin, Software Developer',
     titleTemplate: '%s - React-MD Starter',
     meta: [{
       name: 'description',
