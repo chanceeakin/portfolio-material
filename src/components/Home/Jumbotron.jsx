@@ -5,7 +5,7 @@ const Jumbotron = () => (
   <div className="paper-container">
     <Paper
       zDepth={0}
-      raiseOnHover={1}
+      raiseOnHover={false}
       className="jumbotron"
     >
       <h1 className="md-text-center md-display-3">Chance Eakin, Software Developer</h1>

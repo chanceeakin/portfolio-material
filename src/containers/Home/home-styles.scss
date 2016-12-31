@@ -1,10 +1,21 @@
 .md-grid {
-  margin-left: 0;
-  margin-right: 0;
   width: calc(100%);
 }
 
 .jumbotron {
   padding: 4em;
   width: calc(100% + 16px);
+}
+
+.md-cell--4 {
+  width: calc(33.33333%);
+}
+
+.md-cell--8 {
+  width: calc(66.66667%);
+}
+
+.md-cell--4,
+.md-cell--8 {
+  padding: 8px;
 }

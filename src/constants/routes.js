@@ -20,4 +20,10 @@ export default [{
   className: 'md-text-capitalize',
   leftIcon: <FontIcon>computer</FontIcon>,
   primaryText: 'Projects',
+}, {
+  component: IndexLink,
+  to: '/tech',
+  className: 'md-text-capitalize',
+  leftIcon: <FontIcon>build</FontIcon>,
+  primaryText: 'Technologies',
 }];

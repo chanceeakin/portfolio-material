@@ -5,28 +5,31 @@ import CardActions from 'react-md/lib/Cards/CardActions';
 import CardText from 'react-md/lib/Cards/CardText';
 import Media, { MediaOverlay } from 'react-md/lib/Media';
 import Button from 'react-md/lib/Buttons';
+import Link from 'react-router/lib/Link';
 
-import headshot from '../../common/img/headshot2.jpg';
+import headshot from '../../common/img/headshot1-1.jpg';
 
 const LeftCard = () => (
-  <Card style={{ maxWidth: 600 }} className="">
-    <Media>
+  <Card className="left-card">
+    <Media aspectRatio="1-1">
       <img src={headshot} role="presentation" />
       <MediaOverlay>
-        <CardTitle title="Such nature" subtitle="Wow!">
+        <CardTitle title="About Me" subtitle="Code. Music. BBQ.">
           <Button className="md-cell--right" icon>star_outline</Button>
         </CardTitle>
       </MediaOverlay>
     </Media>
     <CardTitle
-      title="Card Title"
-      subtitle="Card Subtitle"
+      title="Find out a little bit more about me"
     />
     <CardActions expander>
-      <Button flat label="Action 1" />
-      <Button flat label="Action 2" />
+      <Link to="about">
+        <Button flat label="Click it" />
+      </Link>
     </CardActions>
-    <CardText expandable />
+    <CardText expandable>
+      <p>I write code, sing, and build things. This portfolio, built with React and Redux, is almost as good as my brisket.</p>
+    </CardText>
   </Card>
 );
 

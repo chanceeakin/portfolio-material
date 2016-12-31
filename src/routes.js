@@ -36,6 +36,14 @@ export default function createRoutes(/* store */) {
         }).catch(errorLoading);
       },
     }, {
+      path: '/tech',
+      getComponent(nextState, cb) {
+        const renderRoute = loadModule(cb);
+        System.import('./containers/Technologies').then(Component => {
+          renderRoute(Component);
+        }).catch(errorLoading);
+      },
+    }, {
       path: '*',
       getComponent(state, cb) {
         System.import('./components/NotFound').then(loadModule(cb)).catch(errorLoading);

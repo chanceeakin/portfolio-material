@@ -36,3 +36,11 @@ color issues!
 
 ### To Do List
 Cards - figure out what to do there...
+background pattern
+figure out how to do subroutes
+
+### Projects to List
+    Hunter's Website
+    Alan's Site
+    My Blog
+    A previous iteration of my portfolio, hosted statically and linked to!
