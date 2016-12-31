@@ -5,7 +5,7 @@ import NavigationDrawer from 'react-md/lib/NavigationDrawers';
 
 import { app } from '../../config';
 import './styles.scss';
-import navItems from '../../constants/routes';
+import navItems from '../../constants/nav-items';
 import Footer from '../../common/Footer';
 
 @connect(({ media }) => media)

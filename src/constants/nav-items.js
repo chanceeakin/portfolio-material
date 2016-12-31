@@ -14,6 +14,11 @@ export default [{
   className: 'md-text-capitalize',
   leftIcon: <FontIcon>info</FontIcon>,
   primaryText: 'About',
+  nestedItems: [
+    'love',
+    'hate',
+    'beer',
+  ],
 }, {
   component: IndexLink,
   to: '/projects',
