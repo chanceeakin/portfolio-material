@@ -26,21 +26,27 @@ in the [webpack config](configs/wepback.config.js) by setting `const CSSModules 
 Since this project uses [react-helmet](/nfl/react-helmet), the CDN files are being set from
 [the configuration file](src/config/default.js). The default theme is a teal and pink combo.
 
-### Portfolio Notes
+
+
+
+## Portfolio Notes
 
 ### Things I need
 section for portfolio projects
 about me
 That fun, springy text thing for technologies I know
-color issues!
 
 ### To Do List
-Cards - figure out what to do there...
-background pattern
-figure out how to do subroutes
+Cards - mobile issue
 
 ### Projects to List
     Hunter's Website
     Alan's Site
     My Blog
     A previous iteration of my portfolio, hosted statically and linked to!
+    link the previous portfolio with a subdomain.
+    add githooks for this portfolio to the new server
+
+### Done
+    Footer
+    figure out how to do subroutes

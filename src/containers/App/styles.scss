@@ -2,7 +2,11 @@
 @import '~normalize.css';
 @import '~react-md/src/scss/react-md';
 
-$md-primary-color: $md-indigo-500;
+$md-primary-color: $md-teal-500;
 $md-secondary-color: $md-pink-a-400;
 
 @include react-md-everything;
+
+.md-navigation-drawer-content {
+  padding: 0;
+}

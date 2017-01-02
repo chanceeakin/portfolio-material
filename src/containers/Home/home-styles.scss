@@ -1,21 +1,28 @@
-.md-grid {
-  width: calc(100%);
+@import '~normalize.css';
+@import '~react-md/src/scss/react-md';
+
+.home {
+  background-image: url('../../common/img/linen.png');
+  padding: -8px;
 }
 
-.jumbotron {
-  padding: 4em;
-  width: calc(100% + 16px);
+.header {
+  margin: 1em;
 }
 
-.md-cell--4 {
-  width: calc(33.33333%);
-}
+.first-card {
+  background: $md-white-base;
+  padding: 2em;
 
-.md-cell--8 {
-  width: calc(66.66667%);
-}
+  .paper-title {
+    padding: 1em;
+  }
 
-.md-cell--4,
-.md-cell--8 {
-  padding: 8px;
+  .first-text {
+    padding-top: 3rem;
+  }
+
+  .first-button {
+    margin: 2em;
+  }
 }

@@ -138,6 +138,10 @@ module.exports = {
           loader: `css-loader${CSSModules ? '?modules' : ''}?sourceMap&importLoaders=2!postcss-loader!sass-loader?outputStyle=expanded&sourceMap&sourceMapContents`,
         }),
     }, {
+      test: /\.png$/,
+      loader: "url-loader",
+      include: "../src/common/img/",
+    }, {
       test: /\.(woff2?|ttf|eot|svg)$/,
       loader: 'url-loader?limit=10000',
     }, {

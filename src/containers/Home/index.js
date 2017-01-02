@@ -1,8 +1,7 @@
 import React, { PureComponent, PropTypes } from 'react';
 import './home-styles.scss';
 import Jumbotron from '../../components/Home/Jumbotron';
-import LeftCard from '../../components/Home/left-card';
-import RightCard from '../../components/Home/right-card';
+import FirstCard from '../../components/Home/first-card';
 
 export default class Home extends PureComponent {
   static propTypes = {
@@ -19,15 +18,12 @@ export default class Home extends PureComponent {
 
   render() {
     return (
-      <div className="md-grid">
-        <div className="md-cell--12">
+      <div className="md-grid home">
+        <div className="md-cell md-cell--12">
           <Jumbotron />
         </div>
-        <div className="md-cell--4">
-          <LeftCard />
-        </div>
-        <div className="md-cell--8">
-          <RightCard />
+        <div className="md-card md-background--card md-cell md-cell--12 md-cell--6-tablet md-cell--2-phone">
+          <FirstCard className="md-block-centered" />
         </div>
       </div>
     );

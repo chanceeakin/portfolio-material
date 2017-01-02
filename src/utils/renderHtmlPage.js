@@ -13,6 +13,7 @@ export default function renderHtmlPage(store, html = '') {
   page += Object.keys(assets.styles).map(style =>
     `<link href="${assets.styles[style]}" rel="stylesheet" type="text/css">`
   ).join('');
+  page += '<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">';
 
   page += `</head><body><div id="app"><div>${html}</div></div>`;
   if (store) {

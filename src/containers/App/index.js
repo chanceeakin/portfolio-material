@@ -15,6 +15,7 @@ export default class App extends PureComponent {
     tablet: PropTypes.bool.isRequired,
     desktop: PropTypes.bool.isRequired,
     defaultMedia: PropTypes.string.isRequired,
+    drawerType: PropTypes.string.isRequired,
     location: PropTypes.object.isRequired,
     children: PropTypes.node,
   };
@@ -25,11 +26,11 @@ export default class App extends PureComponent {
     this.state = {};
   }
 
-
   render() {
     const {
       location: { pathname },
       defaultMedia,
+      drawerType,
     } = this.props;
 
     let { children } = this.props;
@@ -43,7 +44,7 @@ export default class App extends PureComponent {
         navItems={navItems}
         toolbarTitle="Chance Eakin, Software Developer"
         contentClassName="md-grid"
-        drawerType={'temporary'}
+        drawerType={drawerType}
       >
         <Helmet {...app} />
         {children}

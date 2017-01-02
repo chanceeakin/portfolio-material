@@ -7,7 +7,7 @@ import Button from 'react-md/lib/Buttons';
 import Link from 'react-router/lib/Link';
 
 const RightCard = () => (
-  <Card className="md-block-centered right-card">
+  <Card className="right-card">
     <CardTitle
       title="Details"
       subtitle="A little bit about myself"

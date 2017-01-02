@@ -4,10 +4,13 @@ import { routerReducer as routing } from 'react-router-redux';
 
 const { mobile, tablet, desktop } = Drawer.getCurrentMedia();
 let defaultMedia = 'mobile';
+let drawerType = 'temporary';
 if (desktop) {
   defaultMedia = 'desktop';
+  drawerType = 'PERSISTENT';
 } else if (tablet) {
   defaultMedia = 'tablet';
+  drawerType = 'PERSISTENT';
 }
 
 const initialDrawerState = {
@@ -15,6 +18,7 @@ const initialDrawerState = {
   tablet,
   desktop,
   defaultMedia,
+  drawerType,
 };
 
 export default function createReducer(asyncReducers) {

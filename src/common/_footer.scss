@@ -1,9 +1,31 @@
 @import '~normalize.css';
 @import '~react-md/src/scss/react-md';
 
+$md-font-icon-size: 32px;
+
+a {
+  color: transparent;
+
+  i {
+    color: $md-white-base;
+  }
+
+  :visited {
+    color: inherit;
+  }
+
+  :hover {
+    color: $md-white-base;
+  }
+
+  :active {
+    color: inherit;
+  }
+}
+
 .app-footer {
   align-items: center;
-  background: $md-blue-500;
+  background: $md-teal-500;
   color: $md-white-base;
   margin-bottom: -8px;
   width: calc(100% + 16px);
@@ -15,9 +37,23 @@
   p,
   .md-title,
   .md-body-2 {
-    background: $md-pink-a-200;
+    background: $md-teal-700;
     color: inherit;
+    padding: 0.5em;
   }
+}
+
+.md-cell--4,
+.md-cell--8 {
+  margin: 0;
+}
+
+.md-cell--4 {
+  width: calc(33.33333%);
+}
+
+.md-cell--8 {
+  width: calc(66.66667%);
 }
 
 .footer-header.md-cell--12 {
@@ -25,5 +61,37 @@
 
   .md-title {
     padding: 1.3em;
+  }
+}
+
+.md-icon.fa {
+  display: inline;
+  font-size: 50px;
+  height: $md-font-icon-size;
+  margin: 10px;
+  width: 100%;
+
+  i {
+    text-align: center;
+  }
+}
+
+.fa-ul {
+  margin-left: 0;
+}
+
+.footer-bottom.md-cell--12 {
+  width: calc(100% + 16px);
+
+  p {
+    margin: 0;
+    padding: 1em;
+  }
+}
+
+@media (max-width: 599px) {
+  .md-cell--4,
+  .md-cell--4-phone.md-cell--4-phone {
+    width: calc(100%);
   }
 }
