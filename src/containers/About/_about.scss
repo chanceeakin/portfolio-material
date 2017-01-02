@@ -1,2 +1,28 @@
 @import '~normalize.css';
 @import '~react-md/src/scss/react-md';
+
+.about {
+  background-image: url('../../common/img/linen.png');
+  margin: 0;
+  padding: -8px;
+}
+
+.md-cell--12 {
+  width: calc(100% + 16px);
+}
+
+.md-cell--6 {
+  width: calc(50%);
+}
+
+.card {
+  margin: 8px;
+}
+
+.about-button {
+  margin: 8px;
+}
+
+.last-port-paragraph {
+  margin-bottom: 8px;
+}

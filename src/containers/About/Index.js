@@ -1,5 +1,10 @@
 import React, { PureComponent, PropTypes } from 'react';
-import NewComp from '../../components/NewComp';
+import Jumbotron from '../../components/About/Jumbotron';
+import AboutCard from '../../components/About/about-card';
+import WhatsNew from '../../components/About/whats-new';
+import PortfolioCard from '../../components/About/portfolio-card';
+
+import './_about.scss';
 
 export default class Home extends PureComponent {
   static propTypes = {
@@ -15,17 +20,16 @@ export default class Home extends PureComponent {
 
   render() {
     return (
-      <div className="md-cell--12">
-        <div className="md-grid">
-          <div className="md-cell--12">
-            <h1 className="md-text-container md-text-center">About</h1>
-          </div>
-          <div className="md-cell--5">
-            <h3 className="md-text-center">Moar Tests</h3>
-          </div>
-          <div className="md-cell--7">
-            <NewComp />
-          </div>
+      <div className="md-grid md-cell md-cell--12 about">
+        <Jumbotron />
+        <div className="md-cell--6 md-cell--4-phone">
+          <AboutCard />
+        </div>
+        <div className="md-cell--6 md-cell--4-phone">
+          <WhatsNew />
+        </div>
+        <div className="md-cell--6 md-cell--4-phone md-block-centered">
+          <PortfolioCard />
         </div>
       </div>
     );

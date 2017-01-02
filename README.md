@@ -33,11 +33,14 @@ Since this project uses [react-helmet](/nfl/react-helmet), the CDN files are bei
 
 ### Things I need
 section for portfolio projects
-about me
+about page
+    add some toasts or something interactive
 That fun, springy text thing for technologies I know
+    texts with clickable toasts
+    plus a springy thing
 
 ### To Do List
-Cards - mobile issue
+    Front Page mobile issue
 
 ### Projects to List
     Hunter's Website

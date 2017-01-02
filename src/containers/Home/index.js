@@ -19,9 +19,7 @@ export default class Home extends PureComponent {
   render() {
     return (
       <div className="md-grid home">
-        <div className="md-cell md-cell--12">
-          <Jumbotron />
-        </div>
+        <Jumbotron />
         <div className="md-card md-background--card md-cell md-cell--12 md-cell--6-tablet md-cell--2-phone">
           <FirstCard className="md-block-centered" />
         </div>
