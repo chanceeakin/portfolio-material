@@ -1,2 +1,12 @@
 @import '~normalize.css';
 @import '~react-md/src/scss/react-md';
+
+.projects {
+  background-image: url('../../common/img/linen.png');
+  margin: 0;
+  padding: -8px;
+}
+
+.md-cell--12 {
+  width: calc(100% + 16px);
+}

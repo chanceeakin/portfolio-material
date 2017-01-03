@@ -1,6 +1,6 @@
 import React, { PureComponent, PropTypes } from 'react';
 
-export default class NotFound extends PureComponent {
+export default class Blog extends PureComponent {
   static propTypes = {
     className: PropTypes.string,
     children: PropTypes.node,
@@ -14,8 +14,8 @@ export default class NotFound extends PureComponent {
 
   render() {
     return (
-      <div className="md-cell">
-        <h1 className="md-text-container md-text-center">You done found my 404 page.</h1>
+      <div className="md-grid md-cell md-cell--12 projects">
+        <h1>Blog</h1>
       </div>
     );
   }

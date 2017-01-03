@@ -1,28 +1,10 @@
 @import '~normalize.css';
 @import '~react-md/src/scss/react-md';
 
+@include react-md-cards;
+@include react-md-media;
+
 .home {
   background-image: url('../../common/img/linen.png');
   padding: -8px;
-}
-
-.header {
-  margin: 1em;
-}
-
-.first-card {
-  background: $md-white-base;
-  padding: 2em;
-
-  .paper-title {
-    padding: 1em;
-  }
-
-  .first-text {
-    padding-top: 3rem;
-  }
-
-  .first-button {
-    margin: 2em;
-  }
 }

@@ -12,7 +12,7 @@ import { createMemoryHistory, match, RouterContext } from 'react-router';
 import { syncHistoryWithStore } from 'react-router-redux';
 
 import config from './config';
-import createRoutes from './routes';
+import createRoutes from './routes/index';
 import configureStore from './configureStore';
 import renderHtmlPage from './utils/renderHtmlPage';
 

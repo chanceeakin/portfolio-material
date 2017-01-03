@@ -20,9 +20,10 @@ export default class Home extends PureComponent {
     return (
       <div className="md-grid home">
         <Jumbotron />
-        <div className="md-card md-background--card md-cell md-cell--12 md-cell--6-tablet md-cell--2-phone">
-          <FirstCard className="md-block-centered" />
+        <div className="md-block-centered md-cell--6">
+          <FirstCard />
         </div>
+        <h2 className="md-cell md-cell--12 paper-title md-text-center md-display-2">I make things</h2>
       </div>
     );
   }

@@ -4,10 +4,10 @@ module.exports = {
   app: {
     htmlAttributes: { lang: 'en' },
     title: 'Chance Eakin, Software Developer',
-    titleTemplate: '%s - React-MD Starter',
+    titleTemplate: 'Chance Eakin',
     meta: [{
-      name: 'description',
-      content: 'Wowza! Look at this stuff!',
+      name: 'Chance Eakin Portfolio',
+      content: 'Fun stuff ahead',
     }],
     link: [
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Roboto:400,500,700|Material+Icons' },

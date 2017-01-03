@@ -10,21 +10,42 @@ export default [{
   primaryText: 'Home',
 }, {
   component: IndexLink,
-  to: '/about',
+  to: 'about',
   className: 'md-text-capitalize',
   leftIcon: <FontIcon>info</FontIcon>,
   primaryText: 'About',
-  nestedItems: [
-    'love',
-    'hate',
-    'beer',
-  ],
 }, {
   component: IndexLink,
-  to: '/projects',
+  to: 'projects',
   className: 'md-text-capitalize',
   leftIcon: <FontIcon>computer</FontIcon>,
   primaryText: 'Projects',
+  nestedItems: [{
+    component: IndexLink,
+    to: '/projects/blog',
+    primaryText: 'Personal Blog',
+  }, {
+    component: IndexLink,
+    to: '/projects/hunter',
+    primaryText: 'Hunter\'s Website',
+  }, {
+    component: IndexLink,
+    to: '/projects/alan',
+    primaryText: "Alan's Website",
+  }, {
+    component: IndexLink,
+    to: '/projects/webvr',
+    primaryText: 'Web VR Experiments',
+  }, {
+    component: IndexLink,
+    to: '/projects/oldportfolio',
+    primaryText: 'Portfolio 1.0',
+  }, {
+    component: IndexLink,
+    to: '/projects/robots',
+    primaryText: 'Node Bots',
+  },
+  ],
 }, {
   component: IndexLink,
   to: '/tech',

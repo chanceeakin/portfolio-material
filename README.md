@@ -41,6 +41,7 @@ That fun, springy text thing for technologies I know
 
 ### To Do List
     Front Page mobile issue
+    pictures for the about section
 
 ### Projects to List
     Hunter's Website
