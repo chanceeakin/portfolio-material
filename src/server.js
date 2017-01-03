@@ -21,7 +21,6 @@ const DIST = path.resolve(process.cwd(), 'dist');
 const CACHE_DURATION = 7 * 24 * 60 * 60 * 1000; // days * hours * minutes * seconds * milliseconds
 
 const app = express();
-const staticapp = express();
 
 app.use(helmet({
   noCache: false, // Allow the browser to cache
@@ -35,10 +34,16 @@ app.use(express.static(DIST, {
 }));
 
 // EXAMPLE SUBDOMAIN CREATION
-staticapp.use(vhost('oldportfolio.localhost', function (req, res) {
-  res.setHeader('Content-Type', 'text/html')
-  res.sendFile(process.cwd() + '/src/oldportfolio/index.html');
-}));
+// app.use(vhost('oldportfolio.localhost', function (req, res) {
+//   res.setHeader('Content-Type', 'text/plain')
+//   res.end('Hey');
+// }));
+// app.use(vhost('oldportfolio.localhost', function (req, res) {
+//   res.setHeader('Content-Type', 'text/plain')
+//   res.end('Hey');
+// }));
+// app.use(vhost(express.static(process.cwd() + 'oldportfolio/public')));
+// app.use(vhost('oldportfolio/bower_components', express.static(process.cwd() + 'oldportfolio/bower_components')));
 
 if (__DEV__) {
   const webpack = require('webpack');

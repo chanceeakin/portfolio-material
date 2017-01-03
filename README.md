@@ -34,6 +34,7 @@ Since this project uses [react-helmet](/nfl/react-helmet), the CDN files are bei
 ### Things I need
 section for portfolio projects
 That fun, springy text thing for technologies I know
+configure a secondary server doc to host static content. Woooooof.
 
 ### To Do List
     Front Page mobile issue
@@ -46,10 +47,9 @@ That fun, springy text thing for technologies I know
     My Blog
     A previous iteration of my portfolio, hosted statically and linked to!
     link the previous portfolio with a subdomain.
-    add githooks for this portfolio to the new server
-    about page
-        add some toasts or something interactive
 
 ### Done
     Footer
     figure out how to do subroutes
+    about page
+        add some toasts or something interactive

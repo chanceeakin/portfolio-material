@@ -1,4 +1,5 @@
 import React, { PureComponent, PropTypes } from 'react';
+import InfoCard from '../../components/Projects/Info-Card';
 
 import './_projects.scss';
 
@@ -16,8 +17,13 @@ export default class Home extends PureComponent {
 
   render() {
     return (
-      <div className="md-cell--12 projects">
-        <h1 className="md-text-center">Projects!</h1>
+      <div className="md-grid md-cell--12 projects">
+        <div className="md-cell--12">
+          <h1 className="md-text-center">Projects!</h1>
+        </div>
+        <div className="md-cell--6 md-block-centered">
+          <InfoCard />
+        </div>
       </div>
     );
   }
