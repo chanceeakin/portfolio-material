@@ -33,15 +33,12 @@ Since this project uses [react-helmet](/nfl/react-helmet), the CDN files are bei
 
 ### Things I need
 section for portfolio projects
-about page
-    add some toasts or something interactive
 That fun, springy text thing for technologies I know
-    texts with clickable toasts
-    plus a springy thing
 
 ### To Do List
     Front Page mobile issue
     pictures for the about section
+    add the old portfolio on server side rendering
 
 ### Projects to List
     Hunter's Website
@@ -50,6 +47,8 @@ That fun, springy text thing for technologies I know
     A previous iteration of my portfolio, hosted statically and linked to!
     link the previous portfolio with a subdomain.
     add githooks for this portfolio to the new server
+    about page
+        add some toasts or something interactive
 
 ### Done
     Footer

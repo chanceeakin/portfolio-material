@@ -10,6 +10,7 @@ import { renderToString } from 'react-dom/server';
 import { Provider } from 'react-redux';
 import { createMemoryHistory, match, RouterContext } from 'react-router';
 import { syncHistoryWithStore } from 'react-router-redux';
+import vhost from 'vhost';
 
 import config from './config';
 import createRoutes from './routes/index';
@@ -20,6 +21,7 @@ const DIST = path.resolve(process.cwd(), 'dist');
 const CACHE_DURATION = 7 * 24 * 60 * 60 * 1000; // days * hours * minutes * seconds * milliseconds
 
 const app = express();
+const staticapp = express();
 
 app.use(helmet({
   noCache: false, // Allow the browser to cache
@@ -30,6 +32,12 @@ app.use(morgan('dev', { skip: (req, res) => res.statusCode < 400 }));
 app.use(favicon(path.join(DIST, 'favicon.ico')));
 app.use(express.static(DIST, {
   maxAge: CACHE_DURATION,
+}));
+
+// EXAMPLE SUBDOMAIN CREATION
+staticapp.use(vhost('oldportfolio.localhost', function (req, res) {
+  res.setHeader('Content-Type', 'text/html')
+  res.sendFile(process.cwd() + '/src/oldportfolio/index.html');
 }));
 
 if (__DEV__) {
