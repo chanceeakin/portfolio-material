@@ -58,6 +58,7 @@
     "babel-runtime": "^6.18.0",
     "better-npm-run": "0.0.13",
     "bluebird": "^3.4.6",
+    "body-parser": "^1.15.2",
     "classnames": "^2.2.5",
     "compression": "^1.6.2",
     "ejs": "^2.5.3",
