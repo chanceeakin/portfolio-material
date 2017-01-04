@@ -34,7 +34,7 @@ Since this project uses [react-helmet](/nfl/react-helmet), the CDN files are bei
 ### Things I need
 section for portfolio projects
 That fun, springy text thing for technologies I know
-configure a secondary server doc to host static content. Woooooof.
+create an nginx subdomain proxy and fix it up with the DNS server
 
 ### To Do List
     Front Page mobile issue

@@ -13,7 +13,7 @@ const InfoCard = () => (
     />
     <CardText>
       <h4 className="md-subheading-2 md-text-center">Things I built</h4>
-      <p className="md-body-2">Fun Stuff</p>
+      <p className="md-body-2">Test</p>
     </CardText>
     <CardActions className="first-button md-divider-border md-divider-border--top">
       <Link to="projects/hunter">

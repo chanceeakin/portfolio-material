@@ -10,7 +10,6 @@ import { renderToString } from 'react-dom/server';
 import { Provider } from 'react-redux';
 import { createMemoryHistory, match, RouterContext } from 'react-router';
 import { syncHistoryWithStore } from 'react-router-redux';
-import vhost from 'vhost';
 
 import config from './config';
 import createRoutes from './routes/index';
@@ -32,18 +31,6 @@ app.use(favicon(path.join(DIST, 'favicon.ico')));
 app.use(express.static(DIST, {
   maxAge: CACHE_DURATION,
 }));
-
-// EXAMPLE SUBDOMAIN CREATION
-// app.use(vhost('oldportfolio.localhost', function (req, res) {
-//   res.setHeader('Content-Type', 'text/plain')
-//   res.end('Hey');
-// }));
-// app.use(vhost('oldportfolio.localhost', function (req, res) {
-//   res.setHeader('Content-Type', 'text/plain')
-//   res.end('Hey');
-// }));
-// app.use(vhost(express.static(process.cwd() + 'oldportfolio/public')));
-// app.use(vhost('oldportfolio/bower_components', express.static(process.cwd() + 'oldportfolio/bower_components')));
 
 if (__DEV__) {
   const webpack = require('webpack');
