@@ -9,11 +9,10 @@ import Link from 'react-router/lib/Link';
 const InfoCard = () => (
   <Card className="card">
     <CardTitle
-      title="Projects "
+      title="Things I've Built"
     />
     <CardText>
-      <h4 className="md-subheading-2 md-text-center">Things I built</h4>
-      <p className="md-body-2">Test</p>
+      <p className="md-body-2">The following pages contain links and descriptions to active and past projects. Check out the side bar for more details.</p>
     </CardText>
     <CardActions className="first-button md-divider-border md-divider-border--top">
       <Link to="projects/hunter">

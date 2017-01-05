@@ -10,3 +10,20 @@
 .md-cell--12 {
   width: calc(100% + 16px);
 }
+
+ul {
+  list-style-type: none;
+}
+
+.old {
+  background: $md-white-base;
+  padding: 16px;
+}
+
+.link-card {
+  padding: 8px;
+}
+
+.last-paragraph {
+  margin-top: 16px;
+}

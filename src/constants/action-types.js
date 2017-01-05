@@ -1,2 +1,3 @@
-//bundle all those
-export const NAV_DRAWER = 'NAV_DRAWER';
+const UPDATE_DRAWER_TYPE = Symbol('UPDATE_DRAWER_TYPE');
+
+export default UPDATE_DRAWER_TYPE;

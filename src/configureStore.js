@@ -1,6 +1,6 @@
 import { createStore, applyMiddleware, compose } from 'redux';
 import thunk from 'redux-thunk';
-import createReducer from './reducers';
+import createReducer from './reducers/index';
 
 
 export default function configureStore(initialState) {
@@ -16,9 +16,9 @@ export default function configureStore(initialState) {
   store.asyncReducers = {};
 
   if (module.hot) {
-    module.hot.accept('./reducers', () => {
+    module.hot.accept('./reducers/index', () => {
       try {
-        const reducers = require('./reducers').default;
+        const reducers = require('./reducers/index').default;
         store.replaceReducer(reducers(store.asyncReducers));
       } catch (error) {
         console.error(`Reducer hot reloading error: ${error}`);

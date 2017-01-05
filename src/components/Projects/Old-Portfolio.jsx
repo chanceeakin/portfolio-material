@@ -1,4 +1,5 @@
 import React, { PureComponent, PropTypes } from 'react';
+import FirstCard from './old-portfolio/first-card';
 
 export default class OldPortfolio extends PureComponent {
   static propTypes = {
@@ -15,7 +16,12 @@ export default class OldPortfolio extends PureComponent {
   render() {
     return (
       <div className="md-grid md-cell md-cell--12 projects">
-        <h1>Old Portfolio</h1>
+        <div className="md-cell md-cell--12">
+          <h1 className="md-text-center">Old Portfolio</h1>
+        </div>
+        <div className="md-block-centered md-cell--12">
+          <FirstCard />
+        </div>
       </div>
     );
   }

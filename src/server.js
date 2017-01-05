@@ -56,6 +56,7 @@ app.get('*', (req, res) => {
   const tablet = !!userAgent.match(/ipad/i);
   const desktop = !mobile && !tablet;
 
+  let drawerType = 'persistent';
   let defaultMedia = 'desktop';
   if (tablet) {
     defaultMedia = 'tablet';
@@ -64,7 +65,7 @@ app.get('*', (req, res) => {
   }
 
   const store = configureStore({
-    media: { mobile, tablet, desktop, defaultMedia },
+    media: { mobile, tablet, desktop, defaultMedia, drawerType },
   });
 
   if (__DISABLE_SSR__) {

@@ -21,7 +21,7 @@ export default class Home extends PureComponent {
         <div className="md-cell--12">
           <h1 className="md-text-center">Projects!</h1>
         </div>
-        <div className="md-cell--6 md-block-centered">
+        <div className="md-cell--9 md-block-centered">
           <InfoCard />
         </div>
       </div>

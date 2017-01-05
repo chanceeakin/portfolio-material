@@ -40,6 +40,7 @@ create an nginx subdomain proxy and fix it up with the DNS server
     Front Page mobile issue
     pictures for the about section
     add the old portfolio on server side rendering
+    add reducer for drawerType. look at react-md for inspiration
 
 ### Projects to List
     Hunter's Website

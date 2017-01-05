@@ -6,7 +6,7 @@ import BottomFooter from '../components/Footer/bottom-footer';
 
 
 const Footer = () => (
-  <footer className="md-cell--12 app-footer">
+  <footer style={{ maxHeight: 170 }} className="md-cell--12 app-footer">
     <div className="md-grid">
       <LeftGutter />
       <RightGutter />
