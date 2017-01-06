@@ -2,7 +2,7 @@
 @import '~react-md/src/scss/react-md';
 
 .projects {
-  background-image: url('../../common/img/linen.png');
+  background-image: url('../../common/img/whitediamond_@2X.png');
   margin: 0;
   padding: -8px;
 }
@@ -26,4 +26,20 @@ ul {
 
 .last-paragraph {
   margin-top: 16px;
+}
+
+.robot-paper {
+  background: $md-white-base;
+}
+
+.robot-title {
+  padding: 1rem;
+}
+
+.robot-sub-title {
+  padding: 8px;
+}
+
+.robot-text {
+  padding: 16px;
 }

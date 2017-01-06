@@ -32,25 +32,32 @@ Since this project uses [react-helmet](/nfl/react-helmet), the CDN files are bei
 ## Portfolio Notes
 
 ### Things I need
-section for portfolio projects
-That fun, springy text thing for technologies I know
-create an nginx subdomain proxy and fix it up with the DNS server
+    some sort of fun, redux thing
+    react-scroll
+    react-waypoint
 
 ### To Do List
     Front Page mobile issue
-    pictures for the about section
     add the old portfolio on server side rendering
     add reducer for drawerType. look at react-md for inspiration
+    That fun, springy text thing for technologies I know
 
 ### Projects to List
     Hunter's Website
-    Alan's Site
     My Blog
-    A previous iteration of my portfolio, hosted statically and linked to!
-    link the previous portfolio with a subdomain.
+    web vr
 
 ### Done
     Footer
+    Alan's Site
+    portfolio 1.0
     figure out how to do subroutes
     about page
         add some toasts or something interactive
+        pictures for the about section
+    section for portfolio projects
+
+
+
+### Deployment
+	create an nginx subdomain proxy. change the conf file

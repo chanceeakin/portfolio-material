@@ -15,7 +15,7 @@ export default class OldPortfolio extends PureComponent {
 
   render() {
     return (
-      <div className="md-grid md-cell md-cell--12 projects">
+      <div className="md-grid md-cell md-cell--12 projects footer-push">
         <div className="md-cell md-cell--12">
           <h1 className="md-text-center">Old Portfolio</h1>
         </div>

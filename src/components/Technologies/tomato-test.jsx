@@ -1,6 +1,6 @@
 import React, { PureComponent, PropTypes } from 'react';
 
-export default class WebVR extends PureComponent {
+export default class TomatoTest extends PureComponent {
   static propTypes = {
     className: PropTypes.string,
     children: PropTypes.node,
@@ -14,8 +14,8 @@ export default class WebVR extends PureComponent {
 
   render() {
     return (
-      <div className="md-grid md-cell md-cell--12 projects footer-push">
-        <h1>Web VR</h1>
+      <div style={{ height: '25vh', margin: '8px', background: 'tomato' }} className="md-cell--6">
+        <h1 className="md-text-container md-text-center">Tomato Test!</h1>
       </div>
     );
   }

@@ -14,7 +14,7 @@ export default class Hunter extends PureComponent {
 
   render() {
     return (
-      <div className="md-grid md-cell md-cell--12 projects">
+      <div className="md-grid md-cell md-cell--12 projects footer-push">
         <h1>Hunter</h1>
       </div>
     );

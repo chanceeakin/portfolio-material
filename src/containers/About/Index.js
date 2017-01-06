@@ -20,7 +20,7 @@ export default class Home extends PureComponent {
 
   render() {
     return (
-      <div className="md-grid md-cell md-cell--12 about">
+      <div className="md-grid md-cell md-cell--12 about footer-push">
         <Jumbotron />
         <div className="md-cell--6 md-cell--4-phone">
           <AboutCard />

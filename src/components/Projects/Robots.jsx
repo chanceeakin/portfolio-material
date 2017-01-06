@@ -1,4 +1,5 @@
 import React, { PureComponent, PropTypes } from 'react';
+import InstagramMedia from './robots/Instagram-Media';
 
 export default class Robots extends PureComponent {
   static propTypes = {
@@ -14,8 +15,9 @@ export default class Robots extends PureComponent {
 
   render() {
     return (
-      <div className="md-grid md-cell md-cell--12 projects">
-        <h1>Robots</h1>
+      <div className="md-grid md-cell--12 projects footer-push">
+        <h1 className="md-cell--12 md-text-center">NodeBots</h1>
+        <InstagramMedia />
       </div>
     );
   }
