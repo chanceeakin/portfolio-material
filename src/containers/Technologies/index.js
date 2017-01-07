@@ -2,6 +2,7 @@ import React, { PureComponent, PropTypes } from 'react';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 import Button from 'react-md/lib/Buttons';
 
+import TomatoTest from '../../components/Technologies/tomato-test';
 import './_technologies.scss';
 
 export default class Home extends PureComponent {
@@ -34,12 +35,10 @@ export default class Home extends PureComponent {
 
   render() {
     const items = this.state.items.map((item) => (
-      <div key={item}>
-        {item}
-      </div>
+      <TomatoTest key={item} text={item} />
     ));
     return (
-      <div className="md-grid footer-push tech">
+      <div className="md-grid md-cell--12 footer-push tech">
         <div className="md-cell--12">
           <h1 className="md-text-container md-text-center">Tech I use</h1>
           <Button flat label="Add Item" className="md-cell--right" secondary onClick={this.handleAdd} />
@@ -49,6 +48,8 @@ export default class Home extends PureComponent {
           transitionName="techItem"
           transitionEnterTimeout={800}
           transitionLeaveTimeout={500}
+          component="div"
+          className="md-cell--12 md-grid"
         >
           {items}
         </ReactCSSTransitionGroup>
