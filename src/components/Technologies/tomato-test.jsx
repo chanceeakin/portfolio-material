@@ -14,7 +14,7 @@ export default class TomatoTest extends PureComponent {
 
   render() {
     return (
-      <div style={{ height: '25vh', margin: '8px', background: 'tomato' }} className="md-cell--6">
+      <div style={{ height: '25vh', margin: '8px', background: 'tomato' }} className="tomato md-cell--6">
         <h1 className="md-text-container md-text-center">Tomato Test!</h1>
       </div>
     );

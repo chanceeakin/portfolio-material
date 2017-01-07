@@ -6,3 +6,82 @@
   margin: 0;
   padding: -8px;
 }
+
+@keyframes flip-in-y {
+  from {
+    animation-timing-function: ease-in;
+    opacity: 0;
+    transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+  }
+
+  40% {
+    animation-timing-function: ease-in;
+    transform: perspective(400px) rotate3d(0, 1, 0, -20deg);
+  }
+
+  60% {
+    opacity: 1;
+    transform: perspective(400px) rotate3d(0, 1, 0, 10deg);
+  }
+
+  80% {
+    transform: perspective(400px) rotate3d(0, 1, 0, -5deg);
+  }
+
+  to {
+    transform: perspective(400px);
+  }
+}
+
+.flip-in-y {
+  animation-name: flip-in-y;
+  backface-visibility: visible !important;
+}
+
+@keyframes flip-out-y {
+  from {
+    transform: perspective(400px);
+  }
+
+  30% {
+    opacity: 1;
+    transform: perspective(400px) rotate3d(0, 1, 0, -15deg);
+  }
+
+  to {
+    opacity: 0;
+    transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+  }
+}
+
+.flip-out-y {
+  animation-name: flip-out-y;
+  backface-visibility: visible !important;
+}
+
+.techItem-enter {
+  animation: 0.8s flip-in-y ease;
+}
+
+.techItem-leave {
+  animation: 0.5s flip-out-y ease;
+}
+
+// Please work.
+.example-enter {
+  opacity: 0.01;
+}
+
+.example-enter.example-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}
+
+.example-leave {
+  opacity: 1;
+}
+
+.example-leave.example-leave-active {
+  opacity: 0.01;
+  transition: opacity 300ms ease-in;
+}
