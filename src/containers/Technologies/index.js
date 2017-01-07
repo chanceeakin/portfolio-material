@@ -2,6 +2,8 @@ import React, { PureComponent, PropTypes } from 'react';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 import Button from 'react-md/lib/Buttons';
 
+import './_technologies.scss';
+
 export default class Home extends PureComponent {
   static propTypes = {
     className: PropTypes.string,
@@ -44,7 +46,7 @@ export default class Home extends PureComponent {
           <Button flat label="Remove Item" className="md-cell--right" secondary onClick={this.handleRemove} />
         </div>
         <ReactCSSTransitionGroup
-          transitionName="example"
+          transitionName="techItem"
           transitionEnterTimeout={800}
           transitionLeaveTimeout={500}
         >
