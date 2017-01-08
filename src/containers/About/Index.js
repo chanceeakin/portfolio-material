@@ -3,6 +3,7 @@ import Jumbotron from '../../components/About/Jumbotron';
 import AboutCard from '../../components/About/about-card';
 import WhatsNew from '../../components/About/whats-new';
 import PortfolioCard from '../../components/About/portfolio-card';
+import PortraitCard from '../../components/About/portrait-card';
 
 import './_about.scss';
 
@@ -22,6 +23,10 @@ export default class Home extends PureComponent {
     return (
       <div className="md-grid md-cell md-cell--12 about footer-push">
         <Jumbotron />
+        <div className="md-cell--4" />
+        <div className="md-cell--4">
+          <PortraitCard />
+        </div>
         <div className="md-cell--6 md-cell--4-phone">
           <AboutCard />
         </div>

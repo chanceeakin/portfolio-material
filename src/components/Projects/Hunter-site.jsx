@@ -1,6 +1,7 @@
 import React, { PureComponent, PropTypes } from 'react';
+import FirstCard from './hunter/first-card';
 
-export default class Hunter extends PureComponent {
+export default class AlanSite extends PureComponent {
   static propTypes = {
     className: PropTypes.string,
     children: PropTypes.node,
@@ -15,7 +16,12 @@ export default class Hunter extends PureComponent {
   render() {
     return (
       <div className="md-grid md-cell md-cell--12 projects footer-push">
-        <h1>Hunter</h1>
+        <div className="md-cell md-cell--12">
+          <h1 className="md-text-center">Hunter Enoch&#039;s Website</h1>
+        </div>
+        <div className="md-block-centered md-grid md-cell--12">
+          <FirstCard />
+        </div>
       </div>
     );
   }

@@ -1,7 +1,7 @@
 import React, { PureComponent, PropTypes } from 'react';
 import FirstCard from './alan-site/first-card';
 
-export default class OldPortfolio extends PureComponent {
+export default class AlanSite extends PureComponent {
   static propTypes = {
     className: PropTypes.string,
     children: PropTypes.node,
@@ -19,7 +19,7 @@ export default class OldPortfolio extends PureComponent {
         <div className="md-cell md-cell--12">
           <h1 className="md-text-center">Cardon Geography</h1>
         </div>
-        <div className="md-block-centered md-cell--12">
+        <div className="md-block-centered md-grid md-cell--12">
           <FirstCard />
         </div>
       </div>

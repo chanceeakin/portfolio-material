@@ -1,5 +1,6 @@
 @import '~normalize.css';
 @import '~react-md/src/scss/react-md';
+@import './shake-slow';
 
 .tech {
   background-image: url('../../common/img/whitediamond_@2X.png');
@@ -54,6 +55,16 @@
   }
 }
 
+@keyframes spinnerRotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 .flip-out-y {
   animation-name: flip-out-y;
   backface-visibility: visible !important;
@@ -63,25 +74,16 @@
   animation: 0.8s flip-in-y ease;
 }
 
+.techItem-appear {
+  animation: 0.8s flip-in-y ease;
+}
+
 .techItem-leave {
   animation: 0.5s flip-out-y ease;
 }
 
-// Please work.
-.example-enter {
-  opacity: 0.01;
-}
-
-.example-enter.example-enter-active {
-  opacity: 1;
-  transition: opacity 500ms ease-in;
-}
-
-.example-leave {
-  opacity: 1;
-}
-
-.example-leave.example-leave-active {
-  opacity: 0.01;
-  transition: opacity 300ms ease-in;
+.tech-image {
+  :hover {
+    animation: 5s shake-slow infinite;
+  }
 }

@@ -1,10 +1,25 @@
 @import '~normalize.css';
 @import '~react-md/src/scss/react-md';
-
-@include react-md-cards;
-@include react-md-media;
+@import './anims';
 
 .home {
-  background-image: url('../../common/img/whitediamond_@2X.png');
+  background-image: url('../../common/img/bwmountains.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
   padding: -8px;
+  width: calc(100% + 16px);
+}
+
+.jumbo-text {
+  color: $md-white-base;
+}
+
+.paper-title {
+  color: $md-white-base;
+  padding: 16px;
+}
+
+.second-home-card {
+  margin: 8px;
 }

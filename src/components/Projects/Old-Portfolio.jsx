@@ -19,7 +19,7 @@ export default class OldPortfolio extends PureComponent {
         <div className="md-cell md-cell--12">
           <h1 className="md-text-center">Old Portfolio</h1>
         </div>
-        <div className="md-block-centered md-cell--12">
+        <div className="md-block-centered md-grid md-cell--12">
           <FirstCard />
         </div>
       </div>

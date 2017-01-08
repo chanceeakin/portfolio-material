@@ -32,11 +32,13 @@ export default [{
     component: IndexLink,
     to: '/projects/alan',
     primaryText: "Alan's Website",
-  }, {
-    component: IndexLink,
-    to: '/projects/webvr',
-    primaryText: 'Web VR Experiments',
-  }, {
+  },
+  //  {
+  //   component: IndexLink,
+  //   to: '/projects/webvr',
+  //   primaryText: 'Web VR Experiments',
+  // },
+  {
     component: IndexLink,
     to: '/projects/oldportfolio',
     primaryText: 'Portfolio 1.0',
