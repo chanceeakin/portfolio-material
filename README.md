@@ -34,6 +34,7 @@ Since this project uses [react-helmet](/nfl/react-helmet), the CDN files are bei
 ### Things I need
   minimize bundle - js first
   scss second
+  Deployment issues
 
 ### To Do List
 
