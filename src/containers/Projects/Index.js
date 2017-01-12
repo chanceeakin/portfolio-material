@@ -15,6 +15,7 @@ export default class Home extends PureComponent {
     this.state = {};
   }
 
+// render
   render() {
     return (
       <div className="md-grid md-cell--12 projects footer-push">
