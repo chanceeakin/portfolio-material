@@ -10,7 +10,7 @@ export default {
   path: 'about',
   getComponent(nextState, cb) {
     const renderRoute = loadModule(cb);
-    System.import('../containers/about').then(Component => {
+    System.import('containers/about').then(Component => {
       renderRoute(Component);
     }).catch(errorLoading);
   },

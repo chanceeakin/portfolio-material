@@ -6,6 +6,7 @@ const StyleLintPlugin = require('stylelint-webpack-plugin');
 const NODE_ENV = process.env.NODE_ENV || 'development';
 const DEV = NODE_ENV !== 'production';
 const CLIENT = path.resolve(process.cwd(), 'src', 'client.js');
+const source = path.resolve(process.cwd(), 'src');
 
 const CSSModules = false; // Don't know how to get it working without CDN though
 
@@ -153,6 +154,10 @@ module.exports = {
     modules: [
       'node_modules',
     ],
+	alias: {
+    'containers': path.join(source, 'containers'),
+    'common': path.join(source, 'common'),
+	}
   },
   plugins: getPlugins(),
 };
