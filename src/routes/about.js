@@ -1,17 +1,12 @@
-function errorLoading(err) {
-  console.error(`Dynamic page loading failed: ${err}`);
-}
-
-const loadModule = cb => Component => {
-  cb(null, Component.default);
-};
-
 export default {
   path: 'about',
-  getComponent(nextState, cb) {
-    const renderRoute = loadModule(cb);
-    System.import('containers/About').then(Component => {
-      renderRoute(Component);
-    }).catch(errorLoading);
+  getComponent(state, cb) {
+    if (__CLIENT__) {
+      require.ensure([], require => {
+        cb(null, require('../containers/About').default);
+      });
+    } else {
+      cb(null, require('../containers/About').default);
+    }
   },
 };

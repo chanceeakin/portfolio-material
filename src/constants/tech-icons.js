@@ -1,20 +1,20 @@
-import bootstrapPng from 'common/img/techIcons/bootstrap.png';
-import bowerPng from 'common/img/techIcons/bower.png';
-import css3Png from 'common/img/techIcons/CSS3.png';
-import foundationPng from 'common/img/techIcons/foundation.png';
-import gitPng from 'common/img/techIcons/Git.png';
-import herokuPng from 'common/img/techIcons/heroku.png';
-import html5Png from 'common/img/techIcons/HTML5.png';
-import jqueryPng from 'common/img/techIcons/jquery.png';
-import jsPng from 'common/img/techIcons/JS.png';
-import mongoDBPng from 'common/img/techIcons/mongoDB.png';
-import mySqlPng from 'common/img/techIcons/mysql.png';
-import nginxPng from 'common/img/techIcons/nginx.png';
-import nodePng from 'common/img/techIcons/Node.png';
-import reactPng from 'common/img/techIcons/React.png';
-import reduxPng from 'common/img/techIcons/redux.png';
-import sassPng from 'common/img/techIcons/sass.png';
-import webpackPng from 'common/img/techIcons/webpack.png';
+import bootstrapPng from '../common/img/techIcons/bootstrap.png';
+import bowerPng from '../common/img/techIcons/bower.png';
+import css3Png from '../common/img/techIcons/CSS3.png';
+import foundationPng from '../common/img/techIcons/foundation.png';
+import gitPng from '../common/img/techIcons/Git.png';
+import herokuPng from '../common/img/techIcons/heroku.png';
+import html5Png from '../common/img/techIcons/HTML5.png';
+import jqueryPng from '../common/img/techIcons/jquery.png';
+import jsPng from '../common/img/techIcons/JS.png';
+import mongoDBPng from '../common/img/techIcons/mongoDB.png';
+import mySqlPng from '../common/img/techIcons/mysql.png';
+import nginxPng from '../common/img/techIcons/nginx.png';
+import nodePng from '../common/img/techIcons/Node.png';
+import reactPng from '../common/img/techIcons/React.png';
+import reduxPng from '../common/img/techIcons/redux.png';
+import sassPng from '../common/img/techIcons/sass.png';
+import webpackPng from '../common/img/techIcons/webpack.png';
 
 
 export const bootstrap = {

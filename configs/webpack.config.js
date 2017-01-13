@@ -157,6 +157,7 @@ module.exports = {
 	alias: {
     'containers': path.join(source, 'containers'),
     'common': path.join(source, 'common'),
+	  'components': path.join(source, 'components'),
 	}
   },
   plugins: getPlugins(),

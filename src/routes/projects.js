@@ -3,10 +3,10 @@ export default {
   getIndexRoute(location, cb) {
     if (__CLIENT__) {
       require.ensure([], require => {
-        cb(null, { component: require('containers/Projects').default });
+        cb(null, { component: require('../containers/Projects').default });
       });
     } else {
-      cb(null, { component: require('containers/Projects').default });
+      cb(null, { component: require('../containers/Projects').default });
     }
   },
   getChildRoutes(location, cb) {
