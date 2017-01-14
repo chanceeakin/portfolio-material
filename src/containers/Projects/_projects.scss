@@ -16,6 +16,14 @@ ul {
   padding: 16px;
 }
 
+.card-background {
+  background: $md-teal-300;
+}
+
+.width-fix {
+  width: calc(100%);
+}
+
 .link-card {
   padding: 8px;
 }
@@ -38,4 +46,20 @@ ul {
 
 .robot-text {
   padding: 16px;
+}
+
+.project-button {
+  margin: 16px;
+}
+
+@media (min-width: 840px) {
+  .center-md-12 {
+    width: calc(100%);
+  }
+}
+
+@media (max-width: 599px) {
+  .center-md-12 {
+    width: calc(100%);
+  }
 }

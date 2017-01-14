@@ -8,7 +8,7 @@ import Button from 'react-md/lib/Buttons';
 import imgSrc from '../../../common/img/oldportfolio.png';
 
 const LinkCard = () => (
-  <Card style={{ maxWidth: 600 }} className="link-card md-block-centered">
+  <Card style={{ maxWidth: 600 }} className="link-card card-background md-block-centered">
     <Media aspectRatio="16-9">
       <img src={imgSrc} role="presentation" />
       <MediaOverlay>
@@ -16,7 +16,7 @@ const LinkCard = () => (
       </MediaOverlay>
     </Media>
     <CardActions className="md-divider-border md-divider-border--top">
-      <Button raised href="http://oldportfolio.chanceeakin.io" label="Check it out" className="md-cell--right" primary />
+      <Button raised href="http://oldportfolio.chanceeakin.io" label="Check it out" className="md-cell--right" secondary />
     </CardActions>
   </Card>
 );

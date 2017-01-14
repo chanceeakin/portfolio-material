@@ -11,7 +11,7 @@ const Jumbotron = () => (
     component="div"
     className="md-cell--12 md-grid"
   >
-    <h1 className="md-cell--12 md-text-center md-display-3 jumbo-text">I&#039;m Chance</h1>
+    <h1 className="md-cell--12 md-text-center md-display-3 jumbo-text">I&#039;m Chance.</h1>
   </ReactCSSTransitionGroup>
 );
 

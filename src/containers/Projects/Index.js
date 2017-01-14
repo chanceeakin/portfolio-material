@@ -18,7 +18,7 @@ export default class Home extends PureComponent {
 // render
   render() {
     return (
-      <div className="md-grid md-cell--12 projects footer-push">
+      <div className="md-grid md-cell--12 projects footer-push center-md-12">
         <div className="md-cell--12">
           <h1 className="md-text-center">Projects!</h1>
         </div>

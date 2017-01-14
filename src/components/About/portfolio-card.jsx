@@ -6,6 +6,7 @@ import CardTitle from 'react-md/lib/Cards/CardTitle';
 import CardActions from 'react-md/lib/Cards/CardActions';
 import CardText from 'react-md/lib/Cards/CardText';
 import Button from 'react-md/lib/Buttons';
+import Link from 'react-router/lib/Link';
 import Media, { MediaOverlay } from 'react-md/lib/Media';
 
 
@@ -75,7 +76,11 @@ export default class PortfolioCard extends PureComponent {
             />
           </MediaOverlay>
         </Media>
-        <CardActions expander onClick={this._toastHello} />
+        <CardActions expander onClick={this._toastHello}>
+          <Link to="projects">
+            <Button flat label="Continue to Projects" secondary />
+          </Link>
+        </CardActions>
         <Snackbar toasts={toasts} autohide={autohide} onDismiss={this._removeToast} autohideTimeout={5000} />
         <CardText expandable>
           <h4 className="md-subheading-2 md-text-center">How I built this thing</h4>

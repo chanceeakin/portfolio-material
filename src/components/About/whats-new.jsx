@@ -20,9 +20,9 @@ const WhatsNew = () => (
         <li>React and Redux</li>
         <li>Let&#39;s Encrypt</li>
       </ul>
-      <p className="md-body-2">Plenty to speak of on each of these fronts, but I&#39;ll let the items speak for themselves in their own time! Web VR looks really exciting, and with React-VR in prerelease, there&#39s no telling what the future holds there.</p>
+      <p className="md-body-2">Plenty to speak of on each of these fronts, but I&#039;ll let the items speak for themselves in their own time! Web VR looks really exciting, and with React-VR in prerelease, there&#039;s no telling what the future holds there.</p>
       <h4 className="md-subheading-2 md-text-center">Personal</h4>
-      <p className="md-body-2">Just wrapped up Christmas at the in-laws, and they gave my wife and I an Alexa. Been eyeing some black walnut so I can build us a proper dining table, and we&#39;re going skiing soon!</p>
+      <p className="md-body-2">Just wrapped up Christmas at the in-laws, and they gave my wife and I an Alexa. Been eyeing some black walnut so I can build us a proper dining table, and we&#039;re going skiing soon!</p>
 
     </CardText>
   </Card>

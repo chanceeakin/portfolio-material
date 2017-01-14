@@ -1,15 +1,17 @@
 import React from 'react';
 import Paper from 'react-md/lib/Papers';
+import Button from 'react-md/lib/Buttons';
+import Link from 'react-router/lib/Link';
 import LinkCard from './link-card';
 
 const FirstCardHunter = () => (
-  <div className="paper-container">
+  <div className="paper-container width-fix">
     <Paper
       zDepth={1}
       raiseOnHover={false}
       className="old"
     >
-      <h3 className="md-text-center">General Media Site for an opera singer</h3>
+      <h3 className="md-text-center width-fix">Opera Singer Promo</h3>
       <p className="md-body-2">Hunter, a longtime colleague and friend of mine, asked me to build him a website: here it is!</p>
       <br />
       <h5>Interesting Tech Rundown:</h5>
@@ -24,6 +26,9 @@ const FirstCardHunter = () => (
       <p className="md-body-2">The media player, on the other hand, was a touch more challenging, as it forced research into the audio object. With a little bit of fiddling and design work, I was able to mesh the base HTML audio player with some Material Design features. The Wave feature on those buttons is awesome, and the user feedback the media player provides extends well past what the boilerplate HTML audio player does.</p>
       <p className="md-body-2">At the time of this writing (1/7/2017), I have not yet deployed his site, but all I&#039;m waiting on is his final approval and switch over.</p>
       <br />
+      <Link className="md-block-centered" to="projects/alan">
+        <Button className="project-button" raised label="Continue on" secondary />
+      </Link>
     </Paper>
   </div>
 );

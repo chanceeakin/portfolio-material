@@ -8,13 +8,13 @@ import CardText from 'react-md/lib/Cards/CardText';
 const SecondCard = () => (
   <Card className="second-home-card md-cell--middle">
     <CardText>
-      <h4 className="md-text-center md-headline md-block-centered">My name&#39;s Chance, and this here is my portfolio.</h4>
+      <h4 className="md-text-center md-headline md-block-centered">Hey, I&#039;m a Software Developer. You&#039;ve managed to arrive at my portfolio!</h4>
       <br />
-      <h4 className="md-text-center md-headline">Click the button below to learn more.</h4>
+      <h4 className="md-text-center md-headline">Click the button below to take a look around.</h4>
     </CardText>
     <CardActions className="first-button md-divider-border md-divider-border--top">
-      <Link to="about">
-        <Button flat label="Click it" secondary />
+      <Link className="md-block-centered" to="about">
+        <Button flat label="Let's Begin" secondary />
       </Link>
     </CardActions>
   </Card>

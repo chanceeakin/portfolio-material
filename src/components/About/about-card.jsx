@@ -6,7 +6,6 @@ import CardTitle from 'react-md/lib/Cards/CardTitle';
 import CardActions from 'react-md/lib/Cards/CardActions';
 import CardText from 'react-md/lib/Cards/CardText';
 
-
 @connect(({ media: { mobile, tablet } }) => ({ mobile, tablet }))
 export default class AboutCard extends PureComponent {
   static propTypes = {

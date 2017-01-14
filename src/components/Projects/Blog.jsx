@@ -15,11 +15,11 @@ export default class PersonalBlog extends PureComponent {
 
   render() {
     return (
-      <div className="md-grid md-cell md-cell--12 projects footer-push">
+      <div className="md-grid md-cell md-cell--12 projects center-md-12 footer-push">
         <div className="md-cell md-cell--12">
           <h1 className="md-text-center">My Personal Blog</h1>
         </div>
-        <div className="md-block-centered md-grid md-cell--12">
+        <div className="md-block-centered md-grid md-cell--12 center-md-12">
           <BlogCard />
         </div>
       </div>

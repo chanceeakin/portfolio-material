@@ -1,5 +1,7 @@
 import React from 'react';
 import Paper from 'react-md/lib/Papers';
+import Button from 'react-md/lib/Buttons';
+import Link from 'react-router/lib/Link';
 import LinkCard from './link-card';
 
 const FirstCardPortfolio = () => (
@@ -26,6 +28,9 @@ const FirstCardPortfolio = () => (
       <h5 className="last-paragraph">Things I did and Things I Learned</h5>
       <p className="md-body-2">Spooled up a Digital Ocean droplet (gotta love that service), and put Nginx on it as a reverse proxy server, which then points to my Node/Express app. Quite a bit of work for a static webpage, but what&#039;s the fun in calling yourself a full-stack developer if you can&#039;t use some sort of full-stack.</p>
       <br />
+      <Link className="md-block-centered" to="projects/robots">
+        <Button className="project-button" raised label="Continue on" secondary />
+      </Link>
     </Paper>
   </div>
 );

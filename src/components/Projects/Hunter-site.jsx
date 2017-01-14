@@ -15,7 +15,7 @@ export default class AlanSite extends PureComponent {
 
   render() {
     return (
-      <div className="md-grid md-cell md-cell--12 projects footer-push">
+      <div className="md-grid md-cell md-cell--12 projects center-md-12 footer-push">
         <div className="md-cell md-cell--12">
           <h1 className="md-text-center">Hunter Enoch&#039;s Website</h1>
         </div>

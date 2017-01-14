@@ -52,7 +52,7 @@ export default class App extends PureComponent {
         defaultMedia={defaultMedia}
         drawerTitle="Contents"
         navItems={navItems}
-        toolbarTitle="Chance Eakin, Software Developer"
+        toolbarTitle="Chance Eakin, Portfolio"
         contentClassName="md-grid"
         drawerType={drawerType}
         onChange={this.props.updateDrawerType}

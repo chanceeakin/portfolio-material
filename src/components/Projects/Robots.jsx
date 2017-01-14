@@ -15,7 +15,7 @@ export default class Robots extends PureComponent {
 
   render() {
     return (
-      <div className="md-grid md-cell--12 projects footer-push">
+      <div className="md-grid md-cell--12 projects center-md-12 footer-push">
         <h1 className="md-cell--12 md-text-center">NodeBots</h1>
         <InstagramMedia />
       </div>

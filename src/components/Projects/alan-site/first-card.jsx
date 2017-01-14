@@ -1,5 +1,7 @@
 import React from 'react';
 import Paper from 'react-md/lib/Papers';
+import Button from 'react-md/lib/Buttons';
+import Link from 'react-router/lib/Link';
 import LinkCard from './link-card';
 
 const FirstCardAlan = () => (
@@ -22,6 +24,9 @@ const FirstCardAlan = () => (
       <h5 className="last-paragraph">Things I did, and things I learned</h5>
       <p className="md-body-2">I put everything on a digital ocean droplet running Ubuntu 16.04. It runs an instance of MongoDB and the Node SPA. I learned how to link and access local and remote databases, automatic deployment through shell scripting/git hooks, as well as testing in development and production environments. Oh, that and React.</p>
       <br />
+      <Link className="md-block-centered" to="projects/oldportfolio">
+        <Button className="project-button" raised label="Continue on" secondary />
+      </Link>
     </Paper>
   </div>
 );

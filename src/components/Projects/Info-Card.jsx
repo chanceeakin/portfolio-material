@@ -15,7 +15,7 @@ const InfoCard = () => (
       <p className="md-body-2">The following pages contain links and descriptions to active and past projects. Check out the side bar for more details.</p>
     </CardText>
     <CardActions className="first-button md-divider-border md-divider-border--top">
-      <Link to="projects/hunter">
+      <Link className="md-block-centered" to="projects/blog">
         <Button raised label="Recent work" className="md-cell--right" secondary />
       </Link>
     </CardActions>
