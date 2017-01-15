@@ -41,8 +41,8 @@ export default class Home extends PureComponent {
         )}
         <div className="md-cell--12 tech-cushion">
           <h3 className="md-text-container md-text-center">Thanks for stopping by!</h3>
-          <Link className="md-block-centered" to="/">
-            <Button className="md-block-centered project-button" raised label="Return Home" secondary />
+          <Link className="md-block-centered md-text-center" to="/">
+            <Button className="md-text-center project-button" raised label="Return Home" secondary />
           </Link>
         </div>
       </div>

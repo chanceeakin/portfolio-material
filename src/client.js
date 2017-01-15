@@ -4,6 +4,7 @@ import { Provider } from 'react-redux';
 import { match, Router, browserHistory } from 'react-router';
 import { syncHistoryWithStore } from 'react-router-redux';
 import { AppContainer } from 'react-hot-loader';
+import onRouteUpdate from './utils/onRouteUpdate';
 import configureStore from './configureStore';
 
 const store = configureStore(window.__INITIAL_STATE__);
@@ -18,7 +19,7 @@ function renderApp() {
     render(
       <AppContainer>
         <Provider store={store}>
-          <Router {...renderProps} />
+          <Router {...renderProps} onUpdate={onRouteUpdate} />
         </Provider>
       </AppContainer>,
       root
