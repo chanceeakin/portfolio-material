@@ -30,7 +30,7 @@ export default class Home extends PureComponent {
           transitionAppear
           transitionAppearTimeout={800}
           component="div"
-          className="md-cell--6 md-block-centered md-cell--middle"
+          className="md-cell--6 md-cell--4-phone md-block-centered md-cell--middle"
         >
           <SecondCard />
         </ReactCSSTransitionGroup>
