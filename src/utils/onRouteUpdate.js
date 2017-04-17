@@ -1,4 +1,6 @@
 import { animateScroll } from 'smooth-scroll';
+import ReactGA from 'react-ga';
+ReactGA.initialize('UA-86915404-2');
 
 function scrollToHash() {
   let el = document.querySelector(window.location.hash);
@@ -17,6 +19,8 @@ function scrollToHash() {
 
 let initialRender = true;
 export default function onRouteUpdate() {
+  ReactGA.set({ page: window.location.pathname });
+  ReactGA.pageview(window.location.pathname);
   if (window.location.hash) {
     if (initialRender) {
       setTimeout(() => {
