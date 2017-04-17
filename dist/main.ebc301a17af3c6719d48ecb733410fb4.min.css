@@ -6271,6 +6271,10 @@ a :active {
   text-align: center;
 }
 
+.right-gutter {
+  background: #009688;
+}
+
 .fa-ul {
   margin-left: 0;
 }
@@ -7906,6 +7910,14 @@ ul {
   padding: 16px;
 }
 
+.card-background {
+  background: #4db6ac;
+}
+
+.width-fix {
+  width: calc(100%);
+}
+
 .link-card {
   padding: 8px;
 }
@@ -7928,6 +7940,22 @@ ul {
 
 .robot-text {
   padding: 16px;
+}
+
+.project-button {
+  margin: 16px;
+}
+
+@media (min-width: 840px) {
+  .center-md-12 {
+    width: calc(100%);
+  }
+}
+
+@media (max-width: 599px) {
+  .center-md-12 {
+    width: calc(100%);
+  }
 }
 /*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
 /**
@@ -8937,4 +8965,8 @@ template {
 .tech-image :hover {
   -webkit-animation: 5s shake-slow infinite;
           animation: 5s shake-slow infinite;
+}
+
+.tech-cushion {
+  margin: 16px;
 }
