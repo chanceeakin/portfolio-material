@@ -7,6 +7,7 @@ const NODE_ENV = process.env.NODE_ENV || 'development';
 const DEV = NODE_ENV !== 'production';
 const CLIENT = path.resolve(process.cwd(), 'src', 'client.js');
 const source = path.resolve(process.cwd(), 'src');
+const imageSource = path.resolve(process.cwd(), 'src', 'common', 'img');
 
 const CSSModules = false; // Don't know how to get it working without CDN though
 
@@ -126,9 +127,9 @@ module.exports = {
       loader: DEV
         ? `style-loader!css-loader?localIdentName=[name]__[local].[hash:base64:5]${CSSModules ? '&modules' : ''}&sourceMap&-minimize&importLoaders=1&postcss-loader`
         : ExtractTextPlugin({
-            fallbackLoader: 'style-loader',
-            loader: `css-loader?sourceMap${CSSModules ? '&modules' : ''}&importLoaders=1!postcss-loader`,
-          }),
+          fallbackLoader: 'style-loader',
+          loader: `css-loader?sourceMap${CSSModules ? '&modules' : ''}&importLoaders=1!postcss-loader`,
+        }),
     }, {
       test: /\.scss$/,
       loader: DEV
@@ -139,8 +140,8 @@ module.exports = {
         }),
     }, {
       test: /\.png$/,
-      loader: "url-loader",
-      include: "../src/common/img/",
+      loader: 'url-loader',
+      include: imageSource,
     }, {
       test: /\.(woff2?|ttf|eot|svg)$/,
       loader: 'url-loader?limit=10000',
@@ -154,11 +155,11 @@ module.exports = {
     modules: [
       'node_modules',
     ],
-	alias: {
-    'containers': path.join(source, 'containers'),
-    'common': path.join(source, 'common'),
-	  'components': path.join(source, 'components'),
-	}
+    alias: {
+      containers: path.join(source, 'containers'),
+      common: path.join(source, 'common'),
+	  components: path.join(source, 'components'),
+    },
   },
   plugins: getPlugins(),
 };
