@@ -10,7 +10,7 @@ import Link from 'react-router/lib/Link';
 import Media, { MediaOverlay } from 'react-md/lib/Media';
 
 
-import imgSrc from '../../common/img/reactredux.png';
+import imgSrc from './../../common/img/reactredux.png';
 
 @connect(({ media: { mobile, tablet } }) => ({ mobile, tablet }))
 export default class PortfolioCard extends PureComponent {

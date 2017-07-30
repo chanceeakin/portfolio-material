@@ -4,7 +4,7 @@ import CardTitle from 'react-md/lib/Cards/CardTitle';
 import Media, { MediaOverlay } from 'react-md/lib/Media';
 
 
-import headshot from '../../common/img/headshot1-1.jpg';
+import headshot from './../../common/img/headshot1-1.jpg';
 
 const HeadShot = () => (
   <Card className="card">
